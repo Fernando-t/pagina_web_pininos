@@ -1,0 +1,166 @@
+/*Impor*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Inter:wght@300;500;700&display=swap");
+
+/*Variables*/
+
+:root{
+    --principal:#0b0c0d;
+    --secondary: #ffffff;
+    --font-primary:"Inter", sans-serif; 
+    --font-secondary:"Bowly One SC", cursive;
+
+}
+
+/*Normalize*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Globals*/
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+    color: var(--principal);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+font-size: 1.7rem;
+text-decoration: none;
+color: var(--secondary);
+display: inline-block;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+
+/*Helpers*/
+
+.flex-row{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+/*header & navbar*/
+header{
+    background-color: var(--principal);
+}
+
+header .navbar{
+    min-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .logo{
+    flex-basis: 30%;
+}
+
+header .menu{
+    flex-basis: 40%;
+    justify-content: space-between;
+}
+
+.menu .menu__item{
+    border: 2px solid var(--principal);
+    transition: all .3s ease ease-in-out;
+}
+
+.menu .menu__item:hover{
+    border-color:var(--secondary) ;
+}
+
+.menu .menu__item .menu__link{
+    font-size: 1.8em;
+    padding: 1rem;
+}
+
+/*Presentation*/
+
+#presentation {
+    background-color: var(--principal);
+  }
+  
+  #presentation article {
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  #presentation article picture {
+    width: 80%;
+  }
+  
+  #presentation article picture img {
+    width: 100%;
+  }
+  
+  #presentation article section {
+    width: 50%;
+  }
+  
+  #presentation article section p {
+    font-size: 3.125em;
+  }
+  
+  #presentation article section h1 {
+    font-size: 6.75em;
+  }
+  
+ div p{
+      color: var(--secondary);
+  }
+
+  div h2{
+      color: var(--secondary);
+  } 
+
+  /* FOOTER */
+  
+  footer {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--principal);
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 1.4em;
+    color: bisque;
+  }
+
+  /*Main Section*/
+ 
+
+
+
+  /*Resposive*/
+
+  @media screen and (max-width: 768px){
+
+ 
